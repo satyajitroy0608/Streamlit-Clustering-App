@@ -16,7 +16,7 @@ st.header("Report on clustering")
 # streamlit run streamlit_app.py
 
 # reading the dataset
-data = pd.read_csv(r"C:\Users\Admin\Desktop\Clustering_Dataset.csv",index_col='Unnamed: 0',nrows=1000)
+data = pd.read_csv(r"https://raw.githubusercontent.com/satyajitroy0608/streamlit/main/Test.csv",index_col='Unnamed: 0',nrows=1000)
 # nrows =1000 so that it reads only first 1000 rows at a time, as it is a very large dataset
 # preprocessing the dataset
 data=pd.get_dummies(data,columns=['Gender','Customer Type','Type of Travel','Class','satisfaction'])
